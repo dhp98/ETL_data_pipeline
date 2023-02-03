@@ -1,5 +1,8 @@
 # ETL_data_pipeline
 
+Author: Dhyey Pandya
+Emailid: dhyeyhp2@illinois.edu
+
 ### Overview
 
 * This data pipeline is made to run in an isolated container in which it polls messages from a standard AWS SQS queue in bathces of 10 messages per iteration.
