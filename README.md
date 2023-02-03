@@ -17,6 +17,7 @@ Email: dhyeyhp2@illinois.edu
 ## How to Run
 ### Pre-requisites
 * [install docker](https://docs.docker.com/get-docker/)
+* [install postgresql](https://www.postgresql.org/download/)
 
 ### Steps to run the pipeline:
 * Check if you have docker-compose installed
