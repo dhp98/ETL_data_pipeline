@@ -8,10 +8,12 @@ from datetime import datetime, timezone
 from sqlalchemy import create_engine
 
 # Queue URL :TODO: Pass from command line or a config file
-queue_url = "http://localstack:4566/000000000000/login-queue"
+queue_url = "http://host.docker.internal:4566/000000000000/login-queue"
 
 # Setting up postgresql engine for database operations
-engine = create_engine("postgresql://postgres:postgres@postgres:5432/postgres")
+engine = create_engine(
+    "postgresql://postgres:postgres@host.docker.internal:5432/postgres"
+)
 
 # Setting up logger
 logger = logging.getLogger()
